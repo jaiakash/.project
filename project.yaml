@@ -1,0 +1,75 @@
+# .project metadata for Kubeflow
+# Documentation: https://github.com/cncf/automation/tree/main/utilities/dot-project
+
+# TODO: Add adopters list (ADOPTERS.md)
+# TODO: Add package_managers if distributed via registries
+
+schema_version: "1.0.0"
+slug: "kubeflow"
+name: "Kubeflow"
+description: "Kubeflow is the foundation of tools for AI Platforms on Kubernetes."
+type: "project"
+project_lead: "akgraner" # TODO: AUTO-DETECTED — please verify
+slack_channels: # TODO: AUTO-DETECTED — please verify the channel(s) below
+  - name: "#kubeflow-slack-channels"
+    primary: true
+  - name: "#kubeflow-slack"
+  - name: "#kubeflow-pipelines"
+  - name: "#kubeflow-community-distribution"
+  - name: "#kubeflow-ml-experience"
+
+maturity_log:
+  - phase: "incubating"
+    date: "2023-07-25T00:00:00Z"
+    issue: "https://github.com/cncf/sandbox/issues/196" # TODO: AUTO-DETECTED — please verify
+
+repositories:
+  - "https://github.com/kubeflow/kubeflow"
+
+website: "https://kubeflow.org"
+
+artwork: "https://landscape.cncf.io/logos/kubeflow.svg"
+
+# TODO: Add ADOPTERS.md if your project tracks adopters
+# adopters:
+#   path: "https://github.com/kubeflow/kubeflow/blob/master/ADOPTERS.md"
+
+
+# TODO: Add package manager identifiers if your project is distributed via registries
+# package_managers:
+#   docker: "kubeflow/kubeflow"
+
+social:
+  twitter: "https://twitter.com/kubeflow"
+
+security:
+  policy:
+    path: "https://github.com/kubeflow/kubeflow/blob/master/SECURITY.md"
+  contact:
+    advisory_url: "https://github.com/kubeflow/kubeflow/security/advisories/new"
+
+governance:
+  contributing:
+    path: "https://github.com/kubeflow/kubeflow/blob/master/CONTRIBUTING.md"
+  code_of_conduct:
+    path: "https://github.com/cncf/foundation/blob/main/code-of-conduct.md"
+
+legal:
+  license:
+    path: "https://github.com/kubeflow/kubeflow/blob/master/LICENSE"
+  identity_type:
+    has_dco: true # AUTO-DETECTED — please verify
+    has_cla: false # AUTO-DETECTED — please verify
+    dco_url:
+      path: "https://developercertificate.org/"
+
+documentation:
+  readme:
+    path: "https://github.com/kubeflow/kubeflow/blob/master/README.md"
+
+landscape:
+  category: "Orchestration & Management"
+  subcategory: "Scheduling & Orchestration"
+
+# CLOMonitor Score: 88/100
+# Documentation: 97 | License: 94 | Best Practices: 68 | Security: 52
