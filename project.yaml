@@ -1,46 +1,73 @@
 # .project metadata for Kubeflow
 # Documentation: https://github.com/cncf/automation/tree/main/utilities/dot-project
 
-# TODO: Add adopters list (ADOPTERS.md)
-# TODO: Add package_managers if distributed via registries
-
 schema_version: "1.0.0"
+project_lead: "@kubeflow/kubeflow-steering-committee"
 slug: "kubeflow"
 name: "Kubeflow"
 description: "Kubeflow is the foundation of tools for AI Platforms on Kubernetes."
 type: "project"
-project_lead: "akgraner" # TODO: AUTO-DETECTED — please verify
-slack_channels: # TODO: AUTO-DETECTED — please verify the channel(s) below
-  - name: "#kubeflow-slack-channels"
+
+slack_channels:
+  - name: "#kubeflow-announcements"
     primary: true
-  - name: "#kubeflow-slack"
-  - name: "#kubeflow-pipelines"
   - name: "#kubeflow-community-distribution"
+  - name: "#kubeflow-contributors"
+  - name: "#kubeflow-doc-agent"
+  - name: "#kubeflow-events"
+  - name: "#kubeflow-helm-chart"
+  - name: "#kubeflow-hub"
+  - name: "#kubeflow-katib"
   - name: "#kubeflow-ml-experience"
+  - name: "#kubeflow-notebooks"
+  - name: "#kubeflow-outreach"
+  - name: "#kubeflow-pipelines"
+  - name: "#kubeflow-spark-on-kubernetes"
+  - name: "#kubeflow-trainer"
+
+mailing_lists:
+  - "kubeflow-discuss@googlegroups.com"
 
 maturity_log:
   - phase: "incubating"
     date: "2023-07-25T00:00:00Z"
-    issue: "https://github.com/cncf/sandbox/issues/196" # TODO: AUTO-DETECTED — please verify
+    issue: "https://github.com/cncf/sandbox/issues/196"
+  - phase: "graduated"
+    date: "2026-07-28T00:00:00Z"
+    issue: "https://github.com/cncf/toc/issues/2253"
 
 repositories:
   - "https://github.com/kubeflow/kubeflow"
+  # https://github.com/kubeflow/community/blob/master/subprojects/PROJECTS.md
+  - https://github.com/kubeflow/community-distribution
+  - https://github.com/kubeflow/community-distribution
+  # Graduated projects:
+  - "https://github.com/kubeflow/hub"
+  - "https://github.com/kubeflow/katib"
+  - "https://github.com/kubeflow/notebooks"
+  - "https://github.com/kubeflow/pipelines"
+  - "https://github.com/kubeflow/spark-operator"
+  - "https://github.com/kubeflow/trainer"
+  # Incubating projects:
+  - "https://github.com/kubeflow/kale"
+  - "https://github.com/kubeflow/sdk"
+  # Experimental projects:
+  - "https://github.com/kubeflow/mcp-apache-spark-history-server"
+  - "https://github.com/kubeflow/mcp-server"
+  - "https://github.com/kubeflow/mlflow-integration"
 
 website: "https://kubeflow.org"
 
 artwork: "https://landscape.cncf.io/logos/kubeflow.svg"
 
-# TODO: Add ADOPTERS.md if your project tracks adopters
-# adopters:
-#   path: "https://github.com/kubeflow/kubeflow/blob/master/ADOPTERS.md"
-
-
-# TODO: Add package manager identifiers if your project is distributed via registries
-# package_managers:
-#   docker: "kubeflow/kubeflow"
+adopters:
+  path: "https://github.com/kubeflow/community/blob/master/ADOPTERS.md"
 
 social:
   twitter: "https://twitter.com/kubeflow"
+  linkedin: "https://www.linkedin.com/company/kubeflow"
+  youtube: "https://www.youtube.com/@Kubeflow"
+  youtube_community: "https://www.youtube.com/@KubeflowCommunity"
 
 security:
   policy:
@@ -48,18 +75,29 @@ security:
   contact:
     advisory_url: "https://github.com/kubeflow/kubeflow/security/advisories/new"
 
+audits:
+  - date: "2025-09-22T00:00:00Z"
+    type: security
+    url: "https://github.com/kubeflow/community/blob/master/security/Ada_Logics-Kubeflow-security-audit-2025.pdf"
+
 governance:
-  contributing:
-    path: "https://github.com/kubeflow/kubeflow/blob/master/CONTRIBUTING.md"
+  contributor_guide:
+    path: "https://www.kubeflow.org/docs/about/contributing/"
+  contributor_ladder:
+    path: "https://github.com/kubeflow/community/blob/master/community-membership.md"
   code_of_conduct:
     path: "https://github.com/cncf/foundation/blob/main/code-of-conduct.md"
+  community_calendar:
+    path: "https://zoom-lfx.platform.linuxfoundation.org/meetings/kubeflow"
+  sub_project_list:
+    path: "https://github.com/kubeflow/community/blob/master/subprojects/PROJECTS.md"
 
 legal:
   license:
     path: "https://github.com/kubeflow/kubeflow/blob/master/LICENSE"
   identity_type:
-    has_dco: true # AUTO-DETECTED — please verify
-    has_cla: false # AUTO-DETECTED — please verify
+    has_dco: true
+    has_cla: false
     dco_url:
       path: "https://developercertificate.org/"
 
