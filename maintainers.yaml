@@ -7,51 +7,61 @@ maintainers:
   - project_id: "kubeflow"
     org: "kubeflow"
     teams:
+      # Roster = KSC member, Outreach committee Chair, Community Distribution maintainer,
+      # appointed chairs of the Kubeflow Working Groups, and
+      # root approver of the Kubeflow Subprojects' code repositories.
+      #
+      # Trailing comments record the role each member holds, most significant first:
+      #   KSC / KOC / KDC        -> Kubeflow Steering commitee member / Outreach Chair / Community Distribution maintainer
+      #   chair: <wg>            -> appointed chair of a Kubeflow Working Group
+      #   approver: <subproject> -> root approver in that subproject's OWNERS file
+      #
+      # Source of truth: https://github.com/kubeflow/community
       - name: "project-maintainers"
         members:
-          - akgraner
-          - Al-Pragliola
-          - droctothorpe
-          - andreyvelich
-          - andyatmiami
-          - animeshsingh
-          - kramaranya
-          - gaocegege
-          - chensun
-          - ckadner
-          - ederign
-          - fenglixa
-          - pugangxa
-          - elikatsis
-          - zijianjoy
-          - james-jwu
-          - jeffspahr
-          - Jeffwan
-          - johnugeorge
-          - jonburdo
-          - jbottum
-          - humairak
-          - kimwnasptd
-          - thesuperzapper
-          - tarilabs
-          - mprahl
-          - zazulam
-          - pboyd
-          - scrapcodes
-          - rimolive
-          - rongou
-          - Electronic-Waste
-          - StefanoFioravanzo
-          - tarekabouzeid
-          - theadactyl
-          - Tomcli
-          - varodrig
-          - franciscojavierarceo
-          - juliusvonkohout
-          - zw0610
-          - yanniszark
-          - PatrickXYS
-          - IronPan
-          - yhwang
-          - terrytangyuan
-          - tenzen-y
+          - abhijeet-dhumal       # approver: mcp-server
+          - adysenrothman         # approver: hub
+          - akgraner              # CNCF community lead; approver: examples
+          - Al-Pragliola          # approver: hub
+          - andreyvelich          # Kubeflow Steering Committee; chair: wg-data, wg-ml-experience, wg-training; approver: hub, katib, mcp-server, sdk, spark-operator, trainer
+          - andyatmiami           # chair: wg-notebooks; approver: dashboard, notebooks
+          - astefanutti           # chair: wg-training; approver: mcp-server, sdk, trainer
+          - chasecadet            # Kubeflow Steering Committee
+          - chensun               # chair: wg-pipelines; approver: pipelines
+          - ChenYi015             # chair: wg-data; approver: spark-operator
+          - dominikkawka          # Kubeflow Outreach Committee lead
+          - droctothorpe          # chair: wg-pipelines; approver: pipelines
+          - ederign               # chair: wg-ml-experience; approver: hub, kale
+          - Electronic-Waste      # approver: katib, mcp-server, sdk, trainer
+          - franciscojavierarceo  # Kubeflow Steering Committee; chair: wg-data
+          - gaocegege             # approver: katib, trainer
+          - hbelmiro              # approver: pipelines-components
+          - HumairAK              # chair: wg-pipelines; approver: mlflow-integration, pipelines, pipelines-components
+          - jacobsalway           # approver: spark-operator
+          - jeffspahr             # approver: pipelines
+          - Jeffwan               # approver: trainer
+          - jesuino               # approver: kale
+          - johnugeorge           # approver: katib, trainer
+          - jonburdo              # chair: wg-data; approver: hub
+          - juliusvonkohout       # Kubeflow Steering Committee; Kubeflow Community Distribution; approver: dashboard
+          - kimwnasptd            # approver: community-distribution
+          - kramaranya            # approver: mcp-server, mlflow-integration, sdk
+          - mprahl                # chair: wg-pipelines; approver: mlflow-integration, pipelines, pipelines-components
+          - mwielgus              # approver: spark-operator
+          - nabuskey              # chair: wg-data; approver: spark-operator
+          - nsingla               # approver: pipelines-components
+          - pboyd                 # approver: hub
+          - rareddy               # chair: wg-data; approver: hub
+          - rongou                # approver: mpi-operator
+          - StefanoFioravanzo     # Kubeflow Outreach Committee chair; chair: wg-ml-experience; approver: kale
+          - tarekabouzeid         # Kubeflow Outreach Committee chair; Kubeflow Community Distribution lead
+          - tarilabs              # chair: wg-data; approver: hub
+          - tenzen-y              # chair: wg-training; approver: mpi-operator, trainer
+          - terrytangyuan         # chair: wg-training; approver: mpi-operator, trainer
+          - thesuperzapper        # Kubeflow Steering Committee; chair: wg-notebooks; approver: dashboard, notebooks
+          - vara-bonthu           # chair: wg-data; approver: spark-operator
+          - varodrig              # Kubeflow Outreach Committee chair
+          - yashpal2104           # Kubeflow Outreach Committee lead
+          - yuchaoran2011         # approver: spark-operator
+          - zazulam               # chair: wg-pipelines; approver: pipelines
+          - zijianjoy             # approver: blog, internal-acls, kubeflow, website
